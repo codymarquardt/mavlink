@@ -5571,6 +5571,25 @@
       <field type="float" name="yaw" units="rad">yaw setpoint</field>
       <field type="float" name="yaw_rate" units="rad/s">yaw rate setpoint</field>
     </message>
+    <message id="88" name="POSITION_TARGET_LOCAL_NED_TOTAL">
+      <description>Reports the current commanded vehicle position, velocity, as specified by the autopilot.</description>
+      <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
+      <field type="float" name="N" units="m">X Position in NED frame</field>
+      <field type="float" name="E" units="m">Y Position in NED frame</field>
+      <field type="float" name="D" units="m">Z Position in NED frame (note, altitude is negative in NED)</field>
+      <field type="float" name="vN" units="m/s">X velocity in NED frame</field>
+      <field type="float" name="vE" units="m/s">Y velocity in NED frame</field>
+      <field type="float" name="vD" units="m/s">Z velocity in NED frame</field>
+      <field type="float" name="vx" units="m/s">X velocity in body frame</field>
+      <field type="float" name="vy" units="m/s">Y velocity in body frame</field>
+      <field type="float" name="vz" units="m/s">Z velocity in body frame</field>
+      <field type="float" name="roll" units="rad">roll setpoint</field>
+      <field type="float" name="roll_rate" units="rad/s">roll rate setpoint</field>
+      <field type="float" name="pitch" units="rad">pitch setpoint</field>
+      <field type="float" name="pitch_rate" units="rad/s">pitch rate setpoint</field>
+      <field type="float" name="yaw" units="rad">yaw setpoint</field>
+      <field type="float" name="yaw_rate" units="rad/s">yaw rate setpoint</field>
+    </message>
     <message id="89" name="LOCAL_POSITION_NED_SYSTEM_GLOBAL_OFFSET">
       <description>The offset in X, Y, Z and yaw between the LOCAL_POSITION_NED messages of MAV X and the global coordinate frame in NED coordinates. Coordinate frame is right-handed, Z-axis down (aeronautical frame, NED / north-east-down convention)</description>
       <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
